@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.banner{
+	width:100%; 
+	height: 700px;
+	position: relative;
+	margin:auto;
+	overflow: hidden;
+	
+}
+.banner .layer1{
+position: absolute;	
+z-index: 1;
+top: 0px;
+left: 0px;
+animation:zoomlen 10s forwards ;
+}
+@-webkit-keyframes zoomlen {
+from{transform: scale(1);}
+to {transform: scale(2);}
+}
+
+.banner .layer2{
+
+position: absolute;
+z-index: 2;
+top: 50%;
+left: 50%;
+font-size: 40px;
+font-family: 'segoe ui light';
+color:white;
+text-align: center;
+width: 700px;
+height: 90px;
+margin-left: -350px;
+opacity:0;
+
+animation-delay: 1s;
+animation: font_text 1s forwards; 
+}
+@-webkit-keyframes font_text {
+
+from {top:30%;opacity:0;}
+	to {top:60%; opacity:1;}
+}

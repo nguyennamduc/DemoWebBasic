@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #666;
+}
+
+.box {
+    padding: 50px 0;
+}
+
+.catgory {
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.title {
+    font-size: 24px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #666;
+}
+
+#Footer h3 {
+    font-size: 28px;
+    color: #ffffff;
+}
+
+#Footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+#Footer ul li {
+    list-style: none;
+}
+
+#Footer ul li a {
+    color: #666;
+}
+
+#footer-b p {
+    border-top: 1px solid #666;
+    padding-top: 50px;
+    margin-top: 50px;
+}

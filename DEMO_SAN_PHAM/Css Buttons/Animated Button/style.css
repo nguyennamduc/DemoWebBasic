@@ -1,0 +1,73 @@
+
+ body{
+ 	display:flex; /* kieu hien thi xep theo ngang va o giua  */
+ 	text-align:  center;
+ 	justify-content: center; /* bo cuc xep giua tinh tu ven */
+ 	align-items: center;
+ 	margin: 0;
+ 	padding: 0;
+ 	height: 100vh; /* do cao trung tam */
+ 	background: linear-gradient(to top, #d9afd9 0%,#97d9e1 100%  );
+
+
+ }
+ .button1 button , .button2 button{
+
+ 	position: relative;
+ 	display: block;
+ 	margin:  0 20px;
+ 	border: none;
+ 	color: white;
+ 	background: #222;
+ 	padding: 18px 60px;
+ 	font-size: 22px;
+ 	font-weight: 800;
+ 	text-transform: uppercase;
+ 	cursor: pointer;
+ 	outline: none;
+ 	box-shadow: 0 5px 15px rgba(0,0,0.2); /* tao do bong */ 
+ 	overflow:  hidden;
+ 	border-radius: 5px;
+ }
+
+button:hover{
+ 	box-shadow: 0 5px 40px rgba(0,0,0.2); /* tao do bong */ 
+
+}
+ .button1 button:after,
+
+ .button2 button:after{
+
+position: absolute;
+content: "";
+left: 0;
+top: 0;
+height: 490%;
+width: 140%;
+transition: all .5s ease-in-out;
+
+ }
+ .button1 button:after{
+  	background: #78c7d2;
+  	transform: translate(-98%, -25%) rotate(45deg);
+  }
+ .button2 button:after{
+  	background: #78c7d2;
+  	transform: translate(-9%,-25%) rotate(45deg);
+  }
+
+ .button1:hover button:after{
+
+  	transform: translate(-9%,-25%) rotate(45deg);
+
+  }
+.button2:hover button:after{
+
+    	transform: translate(-98%, -25%) rotate(45deg);
+
+  }
+
+button span{
+	position: relative;
+	z-index: 2;
+}

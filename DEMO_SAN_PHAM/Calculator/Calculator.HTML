@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Máy tính </title>
+<script type="text/javascript">
+	function tinhtoan(pt) {
+		
+		var st1 = document.frm.so1.value;
+		st1 = parseFloat(st1);
+
+		var st2 = document.frm.so2.value;
+		st2 = parseFloat(st2);
+		
+		var ketqua = document.frm.ketqua.value;
+
+		switch(pt)
+		{
+				case '+': kq = st1 + st2;break;
+		case '-': kq = st1 - st2;break;
+		case 'x': kq = st1 * st2;break;
+		case '/': kq = st1 / st2;break;
+		}
+document.frm.ketqua.value = kq;
+		
+
+
+	}
+
+
+</script>
+
+
+</head>
+<body>
+
+<form name="frm" method="post">
+<table border="1" cellspacing="1" cellpadding="1">
+		<tr>
+			<td id="menu" colspan="2">
+				ứng dụng máy tính đơn giản
+			</td>	
+		</tr>
+
+		<tr>
+			<td>Nhập Số Thứ Nhất</td>
+			<td><input type="text" name="so1"></td>
+
+		</tr>
+
+		<tr>
+			<td>Nhập Số Thứ Hai</td>
+			<td><input type="text" name="so2"></td>
+		</tr>
+
+		<tr>
+			<td>Phép tính </td>
+			<td align="center">
+				<input type="button" value="+" onclick="tinhtoan(this.value);">
+				<input type="button" value ="-" onclick="tinhtoan(this.value);">
+				<input type="button" value="*" onclick="tinhtoan(this.value);">
+				<input type="button" value="/" onclick="tinhtoan(this.value);">
+			</td>
+		</tr>
+
+		<tr>
+			<td>Kết quả</td>
+			<td>
+				<input type="text" name="ketqua">
+			</td>
+		</tr>
+		<tr></tr>
+	</table>
+	
+</form>
+
+
+</body>
+</html>

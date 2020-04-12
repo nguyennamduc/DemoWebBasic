@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animated Submit Button</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <button>
+        <p>upload file</p>
+        <div class="loading"></div>
+        <div class="fa fa-check"></div>
+      </button>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $('button').click(function(){
+          $('button').parent().addClass('active');
+          setTimeout(function(){
+            $('button').addClass('success');
+          }, 3400);
+          setTimeout(function(){
+            alert("Your file uploaded successfully!");
+            $('button').parent().removeClass('active');
+            $('button').removeClass('success');
+          }, 4200);
+        });
+      });
+    </script>
+
+  </body>
+</html>

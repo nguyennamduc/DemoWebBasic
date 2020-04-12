@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+ color: #333333;
+}
+#header{
+    background: #222;
+}
+#logo , #search,#cart{
+
+    height: 60px;
+}
+#search input {
+    width: 280px;
+    height: 30px;
+    border-radius: 3px 0px 0px 3px;
+}
+#search button{
+    height: 30px;
+    border-radius: 0 3px 3px 0;
+    background: #eb1f27;
+    color: #fff;
+    border-color:#eb1f27;
+}
+
+#search input ,#search button {
+
+    font-size: 13px;
+    margin-top: 15px;
+
+}
+#cart
+{
+    text-align: right;
+}
+#cart a
+{
+    margin-right: 5px;
+}
+#cart a, #cart span{
+    color: #fff;
+    text-transform: capitalize;
+   margin-top: 15px;
+   
+}
+#cart span{
+    background: #eb1f27;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    border-radius: 100%;
+    line-height: 30px;
+    text-align: center;
+    
+
+}
+
+#menu ul {
+    padding: 0;
+    background: #eb1f27;
+    overflow: hidden;
+}
+#menu ul li{
+   float: left;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    padding:0 10px;
+    border-right: 1px solid #c60a11;
+    
+}
+#menu ul li a{
+color:#fff;
+text-decoration: none;
+text-transform: uppercase;
+
+}
+.banner 
+{
+    margin-top: 10px;
+}
+.productions h3{
+    font-size: 18px;
+    margin-top: 20px;
+
+}
+.produc-list{
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+  
+}
+.produc-list:last-child .produc-item  {
+margin-top: 10px;
+}
+.produc-item {
+    text-align: center;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+   
+}
+.produc-item img {
+width: 125px;
+height: 160px;
+margin: 5px 0;
+}
+
+.produc-item h4 {
+  font-size: 13px;
+  font-weight: bold;
+}
+.produc-item h4 a{
+color: #333;
+
+}
+.produc-item p{
+    text-transform: capitalize;
+}
+.produc-item p span
+{
+    color:  #eb1f27;
+    font-weight: bold;
+}
+.produc-item:hover
+{
+    opacity: 0.5;
+}
